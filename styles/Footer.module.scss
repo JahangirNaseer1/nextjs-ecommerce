@@ -1,0 +1,16 @@
+@import './_variables.scss';
+@import './_mixins.scss';
+
+.footer {
+  background: $color-footer-bg;
+  color: $color-text;
+  padding: $spacing-md 0;
+  .container {
+    @include container;
+    text-align: center;
+  }
+  p {
+    margin: 0;
+    font-size: $font-size-sm;
+  }
+}

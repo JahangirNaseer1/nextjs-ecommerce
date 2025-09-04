@@ -1,0 +1,24 @@
+.imageTextSection {
+  padding: 3rem 0;
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  .imageWrapper {
+    flex: 1 1 300px;
+    min-width: 280px;
+    img {
+      width: 100%;
+      max-width: 400px;
+      border-radius: 12px;
+    }
+  }
+  .textWrapper {
+    flex: 1 1 300px;
+    min-width: 280px;
+    h2 {
+      margin-bottom: 1rem;
+    }
+  }
+}

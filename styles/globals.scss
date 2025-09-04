@@ -1,0 +1,79 @@
+@import './_variables.scss';
+@import './_mixins.scss';
+@import './_fonts.scss';
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  background: $color-bg;
+  color: $color-text;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+body {
+  margin: 0;
+  // font-family: $font-roboto;
+  background: $color-bg;
+  color: $color-text;
+  font-weight: 100;
+  min-height: 100vh;
+}
+p{
+      display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    unicode-bidi: isolate;
+}
+a {
+  color: $color-primary;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+// h1, h2, h3, h4, h5, h6 {
+//   font-family: $font-opensans;
+//   margin: 0 0 $spacing-sm 0;
+// }
+
+.container {
+  @include container;
+}
+
+// Responsive font size
+@include respond-to(sm) {
+  html { font-size: 14px; }
+}
+@include respond-to(md) {
+  html { font-size: 15px; }
+}
+@include respond-to(lg) {
+  html { font-size: 16px; }
+}
+@include respond-to(xl) {
+  html { font-size: 18px; }
+}
+
+.btn-elegant {
+  background: transparent;
+  color: #fff;
+  border: 1px solid #fff;
+  padding: $spacing-sm $spacing-md;
+  font-size: $font-size-md;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background 0.3s, transform 0.2s;
+  &:hover {
+   
+    transform: translateY(-2px);
+  }
+  &:active {
+    transform: translateY(0);
+  }
+}

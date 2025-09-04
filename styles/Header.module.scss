@@ -1,0 +1,31 @@
+@import './_variables.scss';
+@import './_mixins.scss';
+
+.header {
+  background: $color-primary;
+  color: $color-bg;
+  padding: $spacing-sm 0;
+  .container {
+    @include container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    font-family: $font-opensans;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-xl;
+    letter-spacing: 1px;
+  }
+  .nav {
+    display: flex;
+    gap: $spacing-md;
+    a {
+      color: $color-bg;
+      font-weight: $font-weight-medium;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}

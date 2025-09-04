@@ -1,0 +1,92 @@
+  .iconBtn {
+    background: none;
+    border: none;
+    padding: 0.25rem;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    transition: background 0.2s;
+    border-radius: 50%;
+    &:hover {
+      background: rgba(255,255,255,0.08);
+    }
+  }
+@import './_variables.scss';
+@import './_mixins.scss';
+
+.header {
+  background: $color-bg;
+  color: $color-bg;
+  padding: $spacing-sm 0;
+  .container {
+    @include container;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .logo {
+    font-family: $font-opensans;
+    font-weight: $font-weight-bold;
+    font-size: $font-size-xl;
+    color: $color-text;
+  }
+  .nav {
+    display: flex;
+    gap: $spacing-md;
+    a {
+      color: $color-bg;
+      font-weight: $font-weight-medium;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+    @include respond-to(sm) {
+      display: none;
+      &.open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 16px;
+        background: $color-primary;
+        padding: $spacing-md;
+        border-radius: 8px;
+        z-index: 10;
+      }
+    }
+  }
+  .iconBtn{
+    transition: transform 0.2s;
+    svg {
+      fill: $color-text;
+      color: $color-text;
+    }
+    path{
+      fill: $color-text;
+    }
+    circle{
+      fill: $color-text;
+    }
+    &:hover {
+      transform: scale(1.1);
+    }
+
+  }
+  .hamburger {
+    // display: none;
+    background: none;
+    border: none;
+    flex-direction: column;
+    // gap: 4px;
+    cursor: pointer;
+    span {
+     background: #fff;
+    border-radius: 2px;
+    width: 27px;
+    margin: 4px 0px;
+    height: 3px;
+    display: block;
+    }
+  
+  }
+}
