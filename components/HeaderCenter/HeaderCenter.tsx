@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import Link from 'next/link';
-import styles from '../styles/HeaderCenter.module.scss';
+import styles from './HeaderCenter.module.scss';
 
 const HeaderCenter: React.FC = () => {
     const [open, setOpen] = useState(false);

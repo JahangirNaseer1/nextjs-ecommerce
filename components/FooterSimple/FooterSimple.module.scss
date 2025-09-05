@@ -1,16 +1,16 @@
-@import './_variables.scss';
-@import './_mixins.scss';
+@import '../../styles/_variables.scss';
+@import '../../styles/_mixins.scss';
 
 .footer {
-  background: $color-primary;
-  color: $color-bg;
+  background: $color-footer-bg;
+  color: $color-text;
   padding: $spacing-md 0 0 0;
   .container {
     @include container;
   }
   .top {
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: $spacing-sm;
@@ -19,30 +19,19 @@
     font-family: $font-opensans;
     font-weight: $font-weight-bold;
     font-size: $font-size-lg;
-    margin-bottom: $spacing-sm;
   }
-  .menus {
-    width: 50%;
+  .menu {
     display: flex;
-    justify-content: space-around;
-    .menu {
-      display: flex;
-      flex-direction: column;
-      gap: $spacing-xs;
-      h4 {
-        margin: 0 0 $spacing-xs 0;
-        font-size: $font-size-md;
-      }
-      a {
-        color: $color-bg;
-        &:hover {
-          color: $color-secondary;
-        }
+    gap: $spacing-md;
+    a {
+      color: $color-text;
+      &:hover {
+        color: $color-primary;
       }
     }
   }
   .bottom {
-    border-top: 1px solid rgba(255,255,255,0.2);
+    border-top: 1px solid #e0e0e0;
     margin-top: $spacing-sm;
     padding: $spacing-xs 0;
     text-align: center;
@@ -54,9 +43,9 @@
       align-items: flex-start;
       gap: $spacing-sm;
     }
-    .menus {
+    .menu {
       flex-direction: column;
-      gap: $spacing-sm;
+      gap: $spacing-xs;
     }
   }
 }

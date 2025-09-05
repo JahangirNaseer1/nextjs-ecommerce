@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/ContactSection.module.scss';
+import styles from './ContactSection.module.scss';
 
 const ContactSection: React.FC = () => (
     <section className={styles.contactSection}>

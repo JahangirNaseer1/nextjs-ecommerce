@@ -1,7 +1,7 @@
 "use client"
 import React, { useState } from 'react';
 import Link from 'next/link';
-import styles from '../styles/HeaderSplit.module.scss';
+import styles from './HeaderSplit.module.scss';
 
 const HeaderSplit: React.FC = () => {
     const [open, setOpen] = useState(false);

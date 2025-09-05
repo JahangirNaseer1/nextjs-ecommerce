@@ -2,14 +2,14 @@ import type { Metadata } from "next";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 import "../styles/globals.scss";
-import Header from "../components/Header";
-import Footer from "../components/Footer";
-import HeaderCenter from "@/components/HeaderCenter";
-import HeaderSplit from "@/components/HeaderSplit";
-import HeaderSimple from "@/components/HeaderSimple";
-import FooterThreeCol from "@/components/FooterThreeCol";
-import FooterFourCol from "@/components/FooterFourCol";
-import FooterSimple from "@/components/FooterSimple";
+import Header from "../components/Header/Header";
+import Footer from "../components/Footer/Footer";
+import HeaderCenter from "../components/HeaderCenter/HeaderCenter";
+import HeaderSplit from "../components/HeaderSplit/HeaderSplit";
+import HeaderSimple from "../components/HeaderSimple/HeaderSimple";
+import FooterThreeCol from "../components/FooterThreeCol/FooterThreeCol";
+import FooterFourCol from "../components/FooterFourCol/FooterFourCol";
+import FooterSimple from "../components/FooterSimple/FooterSimple";
 
 export const metadata: Metadata = {
   title: "Create Next App",

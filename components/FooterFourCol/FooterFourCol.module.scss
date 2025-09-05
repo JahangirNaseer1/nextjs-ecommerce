@@ -1,9 +1,9 @@
-@import './_variables.scss';
-@import './_mixins.scss';
+@import '../../styles/_variables.scss';
+@import '../../styles/_mixins.scss';
 
 .footer {
-  background: $color-secondary;
-  color: $color-text;
+  background: $color-primary;
+  color: $color-bg;
   padding: $spacing-md 0 0 0;
   .container {
     @include container;
@@ -22,7 +22,7 @@
     margin-bottom: $spacing-sm;
   }
   .menus {
-   width: 30%;
+    width: 50%;
     display: flex;
     justify-content: space-around;
     .menu {
@@ -34,15 +34,15 @@
         font-size: $font-size-md;
       }
       a {
-        color: $color-text;
+        color: $color-bg;
         &:hover {
-          color: $color-primary;
+          color: $color-secondary;
         }
       }
     }
   }
   .bottom {
-    border-top: 1px solid #e0e0e0;
+    border-top: 1px solid rgba(255,255,255,0.2);
     margin-top: $spacing-sm;
     padding: $spacing-xs 0;
     text-align: center;

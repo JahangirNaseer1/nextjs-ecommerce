@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/BrandLogos.module.scss';
+import styles from './BrandLogos.module.scss';
 
 const logos = [
     'https://upload.wikimedia.org/wikipedia/commons/2/2f/Google_2015_logo.svg',

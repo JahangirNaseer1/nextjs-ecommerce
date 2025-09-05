@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/ImageTextSection.module.scss';
+import styles from './ImageTextSection.module.scss';
 
 const ImageTextSection: React.FC = () => (
     <section className={styles.imageTextSection}>

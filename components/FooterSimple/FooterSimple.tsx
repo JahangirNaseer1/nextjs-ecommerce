@@ -1,6 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
-import styles from '../styles/FooterSimple.module.scss';
+import styles from './FooterSimple.module.scss';
 
 const FooterSimple: React.FC = () => (
     <footer className={styles.footer}>

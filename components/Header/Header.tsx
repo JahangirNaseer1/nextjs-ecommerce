@@ -1,7 +1,7 @@
 "use-client"
 import React from 'react';
 import Link from 'next/link';
-import styles from '../styles/Header.module.scss';
+import styles from './Header.module.scss';
 
 
 const Header: React.FC = () => (

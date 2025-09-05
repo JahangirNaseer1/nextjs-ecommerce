@@ -15,7 +15,7 @@ const slides = [
         desc: 'An expression of quiet luxury, Côte Royale is designed for the man who commands attention without seeking it. A reflection of nature’s raw beauty.'
     },
     {
-        image: '/images/hero-bg-2.jpg',
+        image: '/images/hero-bg.jpg',
         title: 'Beautiful UI, Ready to Go',
         desc: 'SCSS, Bootstrap, and reusable components for rapid development.'
     },

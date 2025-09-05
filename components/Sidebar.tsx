@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../styles/Sidebar.module.scss';
+import styles from './Sidebar.module.scss';
 
 interface SidebarProps extends React.PropsWithChildren {
     open: boolean;

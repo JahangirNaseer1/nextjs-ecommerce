@@ -3,8 +3,8 @@
 import React, { useState } from 'react';
 import Link from 'next/link';
 import styles from './HeaderSimple.module.scss';
-import Sidebar from './Sidebar';
-import { CartIcon, AccountIcon } from './IconSet';
+import Sidebar from '../Sidebar';
+import { CartIcon, AccountIcon } from '../IconSet';
 
 
 const HeaderSimple: React.FC = () => {

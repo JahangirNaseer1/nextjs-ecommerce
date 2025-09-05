@@ -1,9 +1,10 @@
-import HeroSection from '../components/HeroSection';
-import TextSection from '../components/TextSection';
-import ImageTextSection from '../components/ImageTextSection';
-import BrandLogos from '../components/BrandLogos';
-import ContactSection from '../components/ContactSection';
-import HeroSlider from '@/components/HeroSlider';
+import HeroSection from '../components/HeroSection/HeroSection';
+import TextSection from '../components/TextSection/TextSection';
+import ImageTextSection from '../components/ImageTextSection/ImageTextSection';
+import BrandLogos from '../components/BrandLogos/BrandLogos';
+import ContactSection from '../components/ContactSection/ContactSection';
+import HeroSlider from '../components/HeroSlider/HeroSlider';
+import FeaturedProduct from '@/components/FeaturedProduct/FeaturedProduct';
 
 export default function Home() {
   return (
@@ -11,11 +12,14 @@ export default function Home() {
       {/* Hero Section (full width) */}
       <HeroSlider />
 
-      <div className="container">
+      {/* <div className="container">
         <HeroSection />
-      </div>
+      </div> */}
       <div className="container">
         <TextSection />
+      </div>
+      <div className='container'>
+        <FeaturedProduct />
       </div>
       <div className="container">
         <ImageTextSection />

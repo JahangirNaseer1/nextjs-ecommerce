@@ -1,8 +1,8 @@
-@import './_variables.scss';
-@import './_mixins.scss';
+@import '../../styles/_variables.scss';
+@import '../../styles/_mixins.scss';
 
 .footer {
-  background: $color-footer-bg;
+  background: $color-secondary;
   color: $color-text;
   padding: $spacing-md 0 0 0;
   .container {
@@ -10,7 +10,7 @@
   }
   .top {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     justify-content: space-between;
     flex-wrap: wrap;
     margin-bottom: $spacing-sm;
@@ -19,14 +19,25 @@
     font-family: $font-opensans;
     font-weight: $font-weight-bold;
     font-size: $font-size-lg;
+    margin-bottom: $spacing-sm;
   }
-  .menu {
+  .menus {
+   width: 30%;
     display: flex;
-    gap: $spacing-md;
-    a {
-      color: $color-text;
-      &:hover {
-        color: $color-primary;
+    justify-content: space-around;
+    .menu {
+      display: flex;
+      flex-direction: column;
+      gap: $spacing-xs;
+      h4 {
+        margin: 0 0 $spacing-xs 0;
+        font-size: $font-size-md;
+      }
+      a {
+        color: $color-text;
+        &:hover {
+          color: $color-primary;
+        }
       }
     }
   }
@@ -43,9 +54,9 @@
       align-items: flex-start;
       gap: $spacing-sm;
     }
-    .menu {
+    .menus {
       flex-direction: column;
-      gap: $spacing-xs;
+      gap: $spacing-sm;
     }
   }
 }
