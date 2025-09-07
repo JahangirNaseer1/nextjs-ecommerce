@@ -30,17 +30,15 @@
     }
     .ProductCard {
         position: relative;
-        padding: 0 $spacing-md $spacing-md $spacing-md;
+        
         background: #1A1A1A;
         color: #fff;
         width: 100%;
         img {
-            margin-top: -5rem;
-            padding-bottom: $spacing-md;
+          
             transform: rotate(-20deg);
             width: 100%;
-           
-            display: block;
+            margin-top: -3rem;
             margin-left: auto;
             margin-right: auto;
         }

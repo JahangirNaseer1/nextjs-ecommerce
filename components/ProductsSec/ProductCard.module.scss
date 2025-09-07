@@ -1,0 +1,81 @@
+@import '../../styles/_variables.scss';
+@import '../../styles/_mixins.scss';
+
+.productCard {
+  min-height: 100vh;
+  width: 100%;
+  display: grid;
+  align-items: center;
+  justify-items: start;
+  position: relative;
+  border: 1px solid rgba(255,255,255,0.1);
+  padding: $spacing-lg;
+  text-align: left;
+  background: transparent;
+  overflow: hidden;
+}
+.bgImage {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  width: 100%;
+  height: 100%;
+  img, .object-cover {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    @include respond-to(md) {
+      opacity: 1;
+    }
+  }
+}
+.content {
+  position: relative;
+  z-index: 10;
+
+  display: grid;
+  gap: $spacing-md;
+  transform: translate(0px, 0px); 
+  translate: none; 
+  rotate: none; 
+  scale: none; 
+
+  h2{
+    font-size: 3.5rem;
+    margin: 0;
+    @include respond-to(md) {
+      font-size: 3rem;
+    }
+    @include respond-to(lg) {
+      font-size: 2.5rem;
+    }
+  }
+
+  .featureList{
+    svg{
+        font-size: 1.5rem;
+    }
+  }
+
+}
+@media (max-width: 768px) {
+  .productCard {
+    padding: $spacing-sm;
+    min-height: 60vh;
+  }
+  .content {
+    gap: $spacing-sm;
+    transform: translateY(1rem);
+  }
+}
+@media (max-width: 480px) {
+  .productCard {
+    padding: $spacing-xs;
+    min-height: 40vh;
+  }
+  .content {
+    gap: $spacing-xs;
+    transform: translateY(0.5rem);
+  }
+}

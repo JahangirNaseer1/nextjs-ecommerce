@@ -5,6 +5,7 @@ import BrandLogos from '../components/BrandLogos/BrandLogos';
 import ContactSection from '../components/ContactSection/ContactSection';
 import HeroSlider from '../components/HeroSlider/HeroSlider';
 import FeaturedProduct from '@/components/FeaturedProduct/FeaturedProduct';
+import ProductsSec from '@/components/ProductsSec/ProductsSec';
 
 export default function Home() {
   return (
@@ -21,9 +22,13 @@ export default function Home() {
       <div className='container'>
         <FeaturedProduct />
       </div>
+      <div className='container'>
+        <ProductsSec />
+      </div>
       <div className="container">
         <ImageTextSection />
       </div>
+
 
       {/* BrandLogos (full width) */}
       <BrandLogos />
