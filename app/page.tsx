@@ -6,6 +6,8 @@ import ContactSection from '../components/ContactSection/ContactSection';
 import HeroSlider from '../components/HeroSlider/HeroSlider';
 import FeaturedProduct from '@/components/FeaturedProduct/FeaturedProduct';
 import ProductsSec from '@/components/ProductsSec/ProductsSec';
+import QuizBanner from '@/components/QuizBanner/QuizBanner';
+import VideoSec from '@/components/VideoSec/VideoSec';
 
 export default function Home() {
   return (
@@ -25,17 +27,21 @@ export default function Home() {
       <div className='container'>
         <ProductsSec />
       </div>
-      <div className="container">
+      {/* <div className="container">
         <ImageTextSection />
-      </div>
+      </div> */}
+
+      <QuizBanner />
+
+      <VideoSec />
 
 
-      {/* BrandLogos (full width) */}
-      <BrandLogos />
 
-      <div className="container">
+      {/* <BrandLogos /> */}
+
+      {/* <div className="container">
         <ContactSection />
-      </div>
+      </div> */}
     </>
   );
 }

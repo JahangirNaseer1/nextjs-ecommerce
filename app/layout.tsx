@@ -29,9 +29,9 @@ export default function RootLayout({
         <HeaderSplit /> */}
         <HeaderSimple />
         <main>{children}</main>
-        <Footer />
+        {/* <Footer />
         <FooterThreeCol />
-        <FooterFourCol />
+        <FooterFourCol /> */}
         <FooterSimple />
       </body>
     </html>

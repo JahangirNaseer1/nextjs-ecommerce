@@ -1,0 +1,18 @@
+
+@import '../../styles/_variables.scss';
+@import '../../styles/_mixins.scss';
+
+ .bannerSection {
+  background: url('/images/background.avif') no-repeat center/cover;
+  padding: 8rem 0;
+  text-align: center;
+  h2 {
+    margin-bottom: 1rem;
+    font-size: 4rem;
+  }
+  p {
+    max-width: 600px;
+    margin: 1rem auto;
+    font-size: 1.4rem;
+  }
+}

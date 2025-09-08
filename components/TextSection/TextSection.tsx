@@ -6,12 +6,14 @@ interface TextSectionProps {
     smallHeading?: string;
     mainHeading?: string;
     para?: string;
+    button?: string;
 }
 
 const TextSection: React.FC<TextSectionProps> = ({
     smallHeading,
     mainHeading,
-    para
+    para,
+    button
 }) => {
     // If no props, render default content for direct use
     if (!smallHeading && !mainHeading && !para) {
@@ -27,6 +29,7 @@ const TextSection: React.FC<TextSectionProps> = ({
             {smallHeading && <p>{smallHeading}</p>}
             {mainHeading && <h2>{mainHeading}</h2>}
             {para && <span>{para}</span>}
+            {button && <a className='btn-default' href="#">{button}</a>}
         </section>
     );
 };

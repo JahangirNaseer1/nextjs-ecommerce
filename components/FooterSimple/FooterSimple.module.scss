@@ -2,14 +2,13 @@
 @import '../../styles/_mixins.scss';
 
 .footer {
-  background: $color-footer-bg;
+
   color: $color-text;
-  padding: $spacing-md 0 0 0;
-  .container {
-    @include container;
-  }
+  padding: 50px 30px 10px 30px;
+  
   .top {
     display: flex;
+    padding-bottom: 20px;
     align-items: center;
     justify-content: space-between;
     flex-wrap: wrap;
@@ -22,7 +21,8 @@
   }
   .menu {
     display: flex;
-    gap: $spacing-md;
+    flex-direction: column;
+   gap: $spacing-sm;
     a {
       color: $color-text;
       &:hover {
@@ -31,11 +31,29 @@
     }
   }
   .bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     border-top: 1px solid #e0e0e0;
     margin-top: $spacing-sm;
     padding: $spacing-xs 0;
     text-align: center;
     font-size: $font-size-sm;
+    p{
+       color: #666;
+    }
+    .menufooter {
+      align-items: center;
+      justify-content: end;
+      display: flex;
+      gap: $spacing-md;
+      a {
+        color: #666;
+        &:hover {
+          color: $color-primary;
+        }
+      }
+    }
   }
   @include respond-to(sm) {
     .top {
